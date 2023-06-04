@@ -61,19 +61,12 @@
         Stay up to date by entering your email here, if you don't already get
         emails from us:
       </p>
-      <form
-        method="POST"
-        action="https://hook.us1.make.com/yym92re3a437gaxve10u6iamwlkcnp9o"
-      >
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          inputmode="email"
-          required
-        />
-        <button type="submit">Notify me</button>
-      </form>
+      <!-- Tuemilio -->
+      <div class="t-signup">
+        <input type="text" name="first_name" placeholder="Jim" />
+        <input type="email" name="email" placeholder="name@email.com" />
+      </div>
+
       <p>
         We're sorry for any sadness or inconvenience. We hope to be back soon.
       </p>
@@ -83,5 +76,94 @@
       <p>With love ❤️,</p>
       <p>Farzad, Noah, and Tyler</p>
     </div>
+    <!-- Start of Tuemilio Code -->
+    <script>
+      ;(function (t, u, e, m, i, l, io) {
+        t["TuemilioObject"] = m
+        t[m] =
+          t[m] ||
+          function () {
+            ;(t[m].q = t[m].q || []).push(arguments)
+          }
+        t[m].id = "fb6a8261-a0f8-4316-ac62-eb1a26167ca5"
+        ;(l = u.createElement(e)), (io = u.getElementsByTagName(e)[0])
+        l.id = m
+        l.src = i
+        l.async = 1
+        io.parentNode.insertBefore(l, io)
+      })(
+        window,
+        document,
+        "script",
+        "Tuemilio",
+        "https://tuemilio.com/assets/js/modal/4.0/tuemilio-modal.js"
+      )
+      Tuemilio("init", {
+        form: {
+          input: {
+            texts: {
+              placeholder: "name@email.com",
+            },
+          },
+          button: {
+            texts: {
+              CTA: "Join waitlist",
+              loading: "Loading",
+              checkDashboard: "Dashboard",
+              login: "Login",
+            },
+          },
+          feedback: {
+            texts: {
+              empty: "Don't forget your email!",
+              invalidEmail: "Wrong email!",
+              unaccepted: "We do not accept that email",
+              unauthorized: "You did not subscribe with that email",
+            },
+          },
+        },
+      })
+      Tuemilio("sendVisit")
+    </script>
+    <style>
+      .t-button {
+        color: #000;
+        background-color: #fece2f;
+        stroke: #000;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-radius: 0;
+        border: 1px solid #000;
+        box-shadow: 3px 3px #202231;
+      }
+      .t-primary-color {
+        color: #000;
+        background-color: #fece2f;
+        fill: #000;
+      }
+      .t-input-color {
+        color: black;
+        background-color: white;
+      }
+      .t-form {
+        max-width: 300px;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      #t-modal {
+        z-index: 1001 !important;
+      }
+    </style>
+    <!-- End of Tuemilio Code -->
   </body>
 </html>
